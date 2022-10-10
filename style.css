@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(./fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+    font-family: space-mono;
+    src: url(./fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* main-section css */
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    flex: 1;
+}
+
+/* left-column css */
+.img-col img {
+    max-width: 539.22px;
+    height: auto;
+}
+
+.img-col p {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 0 82px 0;
+}
+
+/* right-column css */
+.content-col h1 {
+    font-family: 'space-mono';
+    max-width: 586px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.content-col p {
+    font-family: 'space-mono';
+    max-width: 381px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+
+.content-col button {
+    font-family: 'space-mono';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #333333;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/* footer css */
+footer {
+    height: 30px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #BDBDBD;
+    line-height: 30px;
+}
+
+/* mobile responsive media query */
+@media only screen and (max-width:931px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .img-col img {
+        width: 100%;
+    }
+
+    .img-col p {
+        margin: 24px 0;
+    }
+}
